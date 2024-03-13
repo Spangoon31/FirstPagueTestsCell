@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #c0c0c0, #7895ff, #eaeaea, #ffd700);
+}
+
+header {
+  background: linear-gradient(to bottom, #fff,  #b1b1b1,  #fff);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px;
+  width: 99%; /* Ancho del 97% */
+  margin: 0 auto; /* Margen automático para centrarlo horizontalmente */
+  border-radius:15px; 
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;  /*Letra color fondo menu*/
+  margin-left: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;  /*Letrasiz*/
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.catalog {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.catalog h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: -100px;
+  height: 50px;
+}
+
+.footer-content p {
+  margin-top: -29px; /* Ajuste del margen superior para el párrafo */ 
+}
+
+.footer-content ul {
+  margin-top: -1px; /* Ajuste del margen superior para la lista desordenada */
+}
+
+section h2 {
+  color: transparent;
+}
+
+.h2NC h2 {
+  color: black;
+}
+
+/* Agregar estilos específicos para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  header {
+      padding: 10px 0; /* Reducir el espacio del encabezado en pantallas más pequeñas */
+  }
+  .logo {
+      font-size: 20px; /* Reducir el tamaño del logo en pantallas más pequeñas */
+  }
+  nav ul li {
+      display: block; /* Mostrar los elementos de navegación en bloques para pantallas pequeñas */
+      margin: 10px 0; /* Añadir espacio entre los elementos de navegación */
+  }
+  .hero h1 {
+      font-size: 28px; /* Reducir el tamaño del encabezado en la sección del héroe en pantallas más pequeñas */
+  }
+  .hero p {
+      font-size: 16px; /* Reducir el tamaño del texto en la sección del héroe en pantallas más pequeñas */
+  }
+  .footer-content p {
+      margin-top: 0; /* Eliminar el ajuste del margen superior para el párrafo en pantallas pequeñas */ 
+  }
+  .footer-content ul {
+      margin-top: 0; /* Eliminar el ajuste del margen superior para la lista desordenada en pantallas pequeñas */
+  }
+  footer {
+      margin-top: 0; /* Eliminar el margen superior en el pie de página en pantallas pequeñas */
+  }
+}
